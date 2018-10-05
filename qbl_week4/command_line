@@ -1,0 +1,9 @@
+./GWAS.py plink.P*
+
+plink --vcf BYxRM_segs_saccer3.bam.simplified.vcf --pheno pheno.txt --assoc --allow-no-sex --mind --allow-extra-chr --all-pheno
+
+awk 'NR>1''{gsub ("_","\t")}{print}' BYxRM_PhenoData.txt > pheno.txt
+
+./plotters.py plink.eigenvec BYxRM_segs_saccer3.bam.simplified.vcf 
+
+plink --pca 2 --allow-extra-chr --allow-no-sex --mind --vcf BYxRM_segs_saccer3.bam.simplified.vcf 
