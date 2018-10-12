@@ -1,0 +1,8 @@
+velveth Directory2 21 -fastq -shortPaired reads_low_2.fastq 
+velvetg Directory2
+
+spades.py --pe1-1 reads_low_1.fastq --pe1-2 reads_low_2.fastq --only-assembler -o Directory4
+
+lastz reference.fasta /Users/cmdb/qbb2018-answers/qbl_week2/Directory3/contigs.fa[nameparse=tag:NODE] --chain ‑‑format=general-:name2,start1,end1 > velvetlowread
+
+sort -k 2n velvetlowread > velvetlowread3
