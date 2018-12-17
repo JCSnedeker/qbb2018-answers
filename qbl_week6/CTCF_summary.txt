@@ -1,0 +1,6 @@
+The number of gained CTCF sites in introns is: 239
+The number of gained CTCF sites in exons is: 88
+The number of gained CTCF sites in promoters is: 31
+The number of lost CTCF sites in introns is: 63
+The number of lost CTCF sites in exons is: 26
+The number of lost CTCF sites in promoters is: 14
