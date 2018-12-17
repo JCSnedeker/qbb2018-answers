@@ -53,12 +53,10 @@ for line in open(sys.argv[1]):
     else:
         lines = line.strip("\r\n").split("\t")
         info = lines[7].split(";")
-        #yucky = columns[-1].split("=")
         for item in info:
             last = item.split("=")
             if last[0] == "ANN":
                 update= last[1].split("|")
-                #print( anewerlist[1] )
                 if update[1] == " ":
                     continue
                 else:
